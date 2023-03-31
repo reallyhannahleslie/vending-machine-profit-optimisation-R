@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Team A11">
+
+<title>Vendex Challenge</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Vendex_Profit_Maximisation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Vendex_Profit_Maximisation_files/libs/quarto-html/quarto.js"></script>
+<script src="Vendex_Profit_Maximisation_files/libs/quarto-html/popper.min.js"></script>
+<script src="Vendex_Profit_Maximisation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Vendex_Profit_Maximisation_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Vendex_Profit_Maximisation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Vendex_Profit_Maximisation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Vendex_Profit_Maximisation_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Vendex_Profit_Maximisation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Vendex_Profit_Maximisation_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Vendex Challenge</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Team A11 </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="project-boosting-sales-and-achieving-operational-excellence-at-vendex" class="level1">
+<h1>Project: Boosting sales and achieving operational excellence at Vendex</h1>
+<p>Vendex is a leading vending and coffee services company in Europe, with a turnover of 984 million euros on 2017 and employing approximately 5,500 people. Founded in 1967 and headquartered in London, Vendex. has grown its geographic market presence to 15 countries across Europe. Vendex serves more than 8 million consumers every day at its 165,000 point of sales addressing the growing need for out of home food and beverage services at the workplace and on the go.</p>
+<p>Vendex roots stand for service excellence, a high-quality product offering and innovative concepts for out of home food and beverage services.</p>
+<p>Currently, Vendex is putting a strong focus on boosting sales and profitability by improving pricing and assortment strategy and achieving operational excellence through Advanced Analytics.</p>
+<section id="pre-work" class="level3">
+<h3 class="anchored" data-anchor-id="pre-work">Pre-Work</h3>
+<p>Load the data and do some initial data exploration</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#import relevant libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(corrplot)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vip)        <span class="co"># Feature importance</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(probably)   <span class="co"># Thresholds evaluation</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)    <span class="co"># Data cleaning</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(skimr)      <span class="co"># Data summarization</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(themis)     <span class="co"># Extra recipes</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pROC)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># load the data (update with your specific path)</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#file_names &lt;- list.files(path = './DATA/', pattern = '.csv', full.names = TRUE) </span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># check file_names for correct path</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>machines <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../machine_data.csv"</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>products <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../product_data.csv"</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>transactions <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../transactional_data.csv"</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co"># initial exploration beofre assignment tasks (commented out for readability)</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(machines)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(transactions)</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">#summary(products)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">#head(machines)</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">#head(transactions)</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">#head(products)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="part-1-general-overview-and-data-treament" class="level1">
+<h1>Part 1: General overview and Data Treament</h1>
+<section id="question-1-exploratory-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-exploratory-analysis">Question 1 : Exploratory Analysis</h2>
+<section id="a.-how-many-machines-are-there" class="level3">
+<h3 class="anchored" data-anchor-id="a.-how-many-machines-are-there">a. How many machines are there?</h3>
+<p>There are 2495 machines in the data set.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># count number of rows</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(<span class="fu">unique</span>(machines))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2495</code></pre>
+</div>
+</div>
+</section>
+<section id="b.-what-percentage-of-them-are-small" class="level3">
+<h3 class="anchored" data-anchor-id="b.-what-percentage-of-them-are-small">b. What percentage of them are small?</h3>
+<p>38.44% of all machines are small</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># number of machines</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>machines <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(small_machine) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n=</span><span class="fu">n</span>(),<span class="at">.groups =</span> <span class="st">'drop'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">freq =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  small_machine     n  freq
+          &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+1             0  1536 0.616
+2             1   959 0.384</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># alternative way (commented out for readability)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># prop.table(table(machines$small_machine))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="c-how-do-they-distribute-in-terms-of-location-type-i.e.-transport-petrol-station" class="level3">
+<h3 class="anchored" data-anchor-id="c-how-do-they-distribute-in-terms-of-location-type-i.e.-transport-petrol-station">c) How do they distribute in terms of location type i.e.&nbsp;transport, petrol station?</h3>
+<p>There are 58.52% of machines at transport stations, 13.75% at petrol stations, 27.7% at other locations as well as one Nan value.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>machines <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(location_type) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n=</span><span class="fu">n</span>(),<span class="at">.groups =</span> <span class="st">'drop'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">freq =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 3
+  location_type      n     freq
+  &lt;chr&gt;          &lt;int&gt;    &lt;dbl&gt;
+1 others           691 0.277   
+2 petrol station   343 0.137   
+3 transport       1460 0.585   
+4 &lt;NA&gt;               1 0.000401</code></pre>
+</div>
+</div>
+</section>
+<section id="d.-how-many-products-are-there-which-category-has-the-highest-number-of-products" class="level3">
+<h3 class="anchored" data-anchor-id="d.-how-many-products-are-there-which-category-has-the-highest-number-of-products">d.&nbsp;How many products are there? Which category has the highest number of products?</h3>
+<p>There are 63 products. Carbonates and energy drinks has the highest number of products with 13 (20.63%).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the number of products</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">nrow</span>(<span class="fu">unique</span>(products)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 63</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the categroy with the highest number of products</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>products <span class="sc">%&gt;%</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">n=</span><span class="fu">n</span>(),<span class="at">.groups =</span> <span class="st">'drop'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">freq =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(freq))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+  category                          n   freq
+  &lt;chr&gt;                         &lt;int&gt;  &lt;dbl&gt;
+1 Carbonates and energy drinks     13 0.206 
+2 Chocolate based                  11 0.175 
+3 Juice, tea and smoothies          8 0.127 
+4 Salty                             8 0.127 
+5 Cookies, pastries and cereals     7 0.111 
+6 Sugar candy                       7 0.111 
+7 Water                             5 0.0794
+8 Milk based                        4 0.0635</code></pre>
+</div>
+</div>
+</section>
+<section id="e.-which-category-has-the-highest-and-lowest-average-price-and-within-snacks-or-drinks" class="level3">
+<h3 class="anchored" data-anchor-id="e.-which-category-has-the-highest-and-lowest-average-price-and-within-snacks-or-drinks">e. Which category has the highest and lowest average price? And within snacks or drinks?</h3>
+<p>Overall milk-based products (3.43 €) have the highest average price while sugar candy have the lowest average price (2.30 €).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># category based price calculation</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>products <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(category) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_price=</span><span class="fu">mean</span>(price)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 2
+  category                      avg_price
+  &lt;chr&gt;                             &lt;dbl&gt;
+1 Milk based                         3.42
+2 Carbonates and energy drinks       3.26
+3 Water                              3.26
+4 Juice, tea and smoothies           2.86
+5 Salty                              2.72
+6 Cookies, pastries and cereals      2.39
+7 Chocolate based                    2.31
+8 Sugar candy                        2.3 </code></pre>
+</div>
+</div>
+<p>Just between the groups snacks and drinks, drinks has a higher average price of 3,18 € and snacks a lower of 2.42 €.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># between snacks and drinks</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>products <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(type_drink_snack) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_price=</span><span class="fu">mean</span>(price)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  type_drink_snack avg_price
+  &lt;chr&gt;                &lt;dbl&gt;
+1 drink                 3.18
+2 snack                 2.42</code></pre>
+</div>
+</div>
+<p>Within the drinks segment, the highest price is from milk-based products (3.43 €) while the lowest is Juice, Tea and Smoothies (2.86€). Among the foods, the highest priced food group is ‘salty’ (2.73€), while the lowest price is from the Sugar Candy with 2.42 €.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># grouped by category and snack/drink</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>products <span class="sc">%&gt;%</span> </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(type_drink_snack, category) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_price=</span><span class="fu">mean</span>(price)) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(avg_price))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'type_drink_snack'. You can override using
+the `.groups` argument.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 8 × 3
+# Groups:   type_drink_snack [2]
+  type_drink_snack category                      avg_price
+  &lt;chr&gt;            &lt;chr&gt;                             &lt;dbl&gt;
+1 drink            Milk based                         3.42
+2 drink            Carbonates and energy drinks       3.26
+3 drink            Water                              3.26
+4 drink            Juice, tea and smoothies           2.86
+5 snack            Salty                              2.72
+6 snack            Cookies, pastries and cereals      2.39
+7 snack            Chocolate based                    2.31
+8 snack            Sugar candy                        2.3 </code></pre>
+</div>
+</div>
+</section>
+<section id="f-restricting-the-transactional-data-to-march-2017-whats-the-average-daily-items-among-small-and-big-machines" class="level3">
+<h3 class="anchored" data-anchor-id="f-restricting-the-transactional-data-to-march-2017-whats-the-average-daily-items-among-small-and-big-machines">f) Restricting the transactional data to March 2017, what’s the average daily items among small and big machines?</h3>
+<p>Daily Average Items among small machines were 7.71, while for big machines they were 9.89. The boost in sales for bigger machines can be explained 2-fold:<br>
+Firstly, bigger machines usually have more products and a greater selection, thus they should also have higher sales. Secondly, the bigger machines are probably set up at more favorable locations (e.g.&nbsp;more foot traffic).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the dataframe with restricted transactions data (March only)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># transactions_march  &lt;- transactions %&gt;% </span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">#  filter(between(date, as.Date('2017-03-01'), as.Date('2017-03-31'))) </span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>transactions_march <span class="ot">&lt;-</span> transactions[<span class="fu">month</span>(<span class="fu">as.Date</span>(transactions<span class="sc">$</span>date)) <span class="sc">==</span> <span class="dv">3</span>, ]</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">#select the necessary machine data columns and merge them with the date restricted transactions set</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>machines_selec <span class="ot">&lt;-</span> machines <span class="sc">%&gt;%</span> </span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(machine, small_machine)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>transactions_march_merged <span class="ot">&lt;-</span> <span class="fu">merge</span>(transactions_march, machines_selec, <span class="at">by =</span> <span class="st">"machine"</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate daily items per machine (incl. type of machine for later grouping)</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>march_average_data <span class="ot">&lt;-</span> transactions_march_merged <span class="sc">%&gt;%</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine, small_machine) <span class="sc">%&gt;%</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">average_daily_items_per_machine =</span> <span class="fu">n</span>() <span class="sc">/</span> <span class="fu">n_distinct</span>(<span class="fu">as.Date</span>(date)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'machine'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the average per group</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>march_average_data <span class="sc">%&gt;%</span> </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(small_machine) <span class="sc">%&gt;%</span> </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">average_daily_items_by_type =</span> <span class="fu">mean</span>(average_daily_items_per_machine))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  small_machine average_daily_items_by_type
+          &lt;int&gt;                       &lt;dbl&gt;
+1             0                        9.90
+2             1                        7.71</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="question-2-trend-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-trend-analysis">Question 2 : Trend Analysis</h2>
+<section id="a-is-there-a-general-trend-in-the-number-of-snacks-and-drinks-as-the-months-progress-from-january-to-april-is-it-the-same-for-snacks-and-drinks-why-do-you-think-that-might-be-so" class="level3">
+<h3 class="anchored" data-anchor-id="a-is-there-a-general-trend-in-the-number-of-snacks-and-drinks-as-the-months-progress-from-january-to-april-is-it-the-same-for-snacks-and-drinks-why-do-you-think-that-might-be-so">a) Is there a general trend in the number of snacks and drinks as the months progress from January to April? Is it the same for snacks and drinks? Why do you think that might be so?</h3>
+<ul>
+<li>For snacks there is not real trend to be identified as the months progresses from January to April</li>
+<li>However, for drinks we identified that there is an overall upward trend over the same time period. This can be explained by the fact that with rising temperatures, people are more likely to buy drinks and thus, also buy them from our vending machines. Food consumption patterns are not influenced by the heat.</li>
+</ul>
+</section>
+<section id="b-is-there-shorter-time-period-trend-as-well-is-it-the-same-for-snacks-and-drinks-what-do-you-might-be-the-cause" class="level3">
+<h3 class="anchored" data-anchor-id="b-is-there-shorter-time-period-trend-as-well-is-it-the-same-for-snacks-and-drinks-what-do-you-might-be-the-cause">b) Is there shorter time period trend as well? Is it the same for snacks and drinks? What do you might be the cause?</h3>
+<ul>
+<li>When looking at the short-term trend, they are very similar for both drinks and snacks: For both categories, there are around 4 spikes in equal distance.</li>
+<li>We believe that this can be attributed to the different consumption patterns of weekends and weekdays. We believe that the spiked represent weekend consumption patterns as more people use the transports and routes to travel and thus use vending machines more.</li>
+</ul>
+</section>
+</section>
+<section id="question-3-outlier-na-treatment" class="level2">
+<h2 class="anchored" data-anchor-id="question-3-outlier-na-treatment">Question 3: Outlier &amp; NA treatment</h2>
+<section id="a-are-there-outliers-how-would-you-treat-them" class="level3">
+<h3 class="anchored" data-anchor-id="a-are-there-outliers-how-would-you-treat-them">a) Are there outliers? How would you treat them?</h3>
+<p>When first analyzing the summary given in the assignment, we notice big differences between mean and median as well as the 3rd quartile and the maximum. This is a first indicator that we have outliers in our data. Thus, we took a closer look at the data behind the summary.</p>
+<p>After plotting the data with a boxplot as well as computing the IQR, we can conclude that there are 184 outliers that we then removed. Since we plan to run a linear regression model later, those would otherwise skew our results heavily. We worked with the 1.5 IQR as an industry standard.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># assign income_average column to a vector for easier work</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>avg_income <span class="ot">&lt;-</span> machines<span class="sc">$</span>income_average</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1st Check for outliers with Box plot</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(avg_income)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify any outliers</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>outliers1 <span class="ot">&lt;-</span> <span class="fu">boxplot</span>(avg_income)<span class="sc">$</span>out</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Vendex_Profit_Maximisation_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check how many outliers</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(outliers1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 184</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the outliers with the IQR range (double check the boxplot)</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># in order to effectively use the IQR we need to omit all NA values</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>avg_income_complete <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(avg_income)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the Quartiles</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>quartiles <span class="ot">&lt;-</span> <span class="fu">quantile</span>(avg_income_complete, <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.75</span>))</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the IQR</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>iqr <span class="ot">&lt;-</span> <span class="fu">IQR</span>(avg_income_complete)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>iqr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11553</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute the lower and upper limits of the IQR</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>lower_limit <span class="ot">&lt;-</span> quartiles[<span class="dv">1</span>] <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> iqr</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>upper_limit <span class="ot">&lt;-</span> quartiles[<span class="dv">2</span>] <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> iqr</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the lower and upper limits</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(lower_limit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    25% 
+31265.5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(upper_limit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    75% 
+77477.5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find outliers</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>outliers <span class="ot">&lt;-</span> avg_income_complete[avg_income_complete <span class="sc">&lt;=</span> lower_limit <span class="sc">|</span> avg_income_complete <span class="sc">&gt;=</span> upper_limit]</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(outliers) <span class="co"># same as in boxplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 184</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># apply to the dataframe</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>machines <span class="ot">&lt;-</span> machines[<span class="sc">!</span>(machines<span class="sc">$</span>income_average <span class="sc">%in%</span> outliers), ]</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(machines)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2311</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot distribution of average_income after removal of outliers</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> machines, <span class="fu">aes</span>(<span class="at">x =</span> income_average)) <span class="sc">+</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1000</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"lightpink"</span>) <span class="sc">+</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distribution of Income Average after Outlier Removal"</span>, <span class="at">x =</span> <span class="st">"Income Average"</span>, <span class="at">y =</span> <span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 182 rows containing non-finite values (`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Vendex_Profit_Maximisation_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="b-deal-with-nas" class="level3">
+<h3 class="anchored" data-anchor-id="b-deal-with-nas">b) Deal with NAs</h3>
+<p>There are several ways to deal with NA values.</p>
+<ol type="1">
+<li><p><strong>Drop the rows</strong>: Remove data points that contain missing values. While it is the least “intrusive” method it can lead to a loss of information and explanatory power. We will only pursue the option when there are few rows missing. Another way could be to drop the feature (column) completely. This would only apply if that column has no great explanatory value (not the case here).</p></li>
+<li><p><strong>Replace with mean or median</strong>: Replace missing values with the mean/median of the non-missing values in the same column. While you are still changing/manipulating the distribution, this method helps to only do so minimally and maintain the overall distribution and structure of the data.</p></li>
+<li><p><strong>Replace with 0</strong>: Replace missing values with the 0, when the feature does not apply to all datapoints, eg. if the vending machine is not at a transport location it cannot have Working Passengers .</p></li>
+</ol>
+<p>The individual choice of method depends on the business case. In this case, we saw that we have missing values in</p>
+<ul>
+<li><strong>location_type</strong>: Will be dropped</li>
+<li><strong>train_AvgDailyPassengers</strong>: Will be replaced by 0</li>
+<li><strong>train_AvgWorkingDayPassengers</strong>: Will be replaced by 0</li>
+<li><strong>total_number_of_routes_600</strong>: Will be replaced by 0</li>
+<li><strong>income_average</strong>: Will be replaced by mean</li>
+</ul>
+<p>Further explanations in the individual processing</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create overview of missing values</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="at">X =</span> machines, <span class="at">FUN =</span> <span class="cf">function</span>(x) <span class="fu">sum</span>(<span class="fu">is.na</span>(x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$machine
+[1] 0
+
+$location_type
+[1] 1
+
+$num_vendex_nearby_300
+[1] 0
+
+$train_AvgDailyPassengers
+[1] 1196
+
+$train_AvgWorkingDayPassengers
+[1] 1196
+
+$n_density_5km
+[1] 0
+
+$income_average
+[1] 182
+
+$total_number_of_routes_600
+[1] 100
+
+$num_hotels
+[1] 0
+
+$num_hotels_45
+[1] 0
+
+$small_machine
+[1] 0</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Method 1: Drop rows with missing values. As location_type has only one missing row, there is no great explantory power loss in removing the entry</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>machines <span class="ot">&lt;-</span> machines <span class="sc">%&gt;%</span> </span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(location_type))</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Method 2: Replace by average to maintain the distribution for average income</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co"># We omit NAs to calculate the true mean</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>mean_avg_income <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">mean</span>(<span class="fu">na.omit</span>(machines<span class="sc">$</span>income_average))) </span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>machines<span class="sc">$</span>income_average <span class="ot">&lt;-</span> machines<span class="sc">$</span>income_average <span class="sc">%&gt;%</span> </span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_na</span>(mean_avg_income)</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Method 3: Replace with 0s</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="co"># For both daily variables as well as the routes feature we assume that there are NA alues as there are simply no routes or train stations nearby, thus it cannot have average daily passengers</span></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Average Daily Passenger</span></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>machines<span class="sc">$</span>train_AvgDailyPassengers <span class="ot">&lt;-</span> machines<span class="sc">$</span>train_AvgDailyPassengers <span class="sc">%&gt;%</span></span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_na</span>(<span class="dv">0</span>)</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Average Daily Working Passenger</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>machines<span class="sc">$</span>train_AvgWorkingDayPassengers <span class="ot">&lt;-</span> machines<span class="sc">$</span>train_AvgWorkingDayPassengers <span class="sc">%&gt;%</span> </span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_na</span>(<span class="dv">0</span>)</span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Routes</span></span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>machines<span class="sc">$</span>total_number_of_routes_600 <span class="ot">&lt;-</span> machines<span class="sc">$</span>total_number_of_routes_600 <span class="sc">%&gt;%</span> </span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">replace_na</span>(<span class="dv">0</span>)</span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Check if all NA were dealt with</span></span>
+<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(<span class="at">X =</span> machines, <span class="at">FUN =</span> <span class="cf">function</span>(x) <span class="fu">sum</span>(<span class="fu">is.na</span>(x)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$machine
+[1] 0
+
+$location_type
+[1] 0
+
+$num_vendex_nearby_300
+[1] 0
+
+$train_AvgDailyPassengers
+[1] 0
+
+$train_AvgWorkingDayPassengers
+[1] 0
+
+$n_density_5km
+[1] 0
+
+$income_average
+[1] 0
+
+$total_number_of_routes_600
+[1] 0
+
+$num_hotels
+[1] 0
+
+$num_hotels_45
+[1] 0
+
+$small_machine
+[1] 0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that only 184 values removed</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(machines)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2310</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="question-4-interpretation-of-boxplot" class="level2">
+<h2 class="anchored" data-anchor-id="question-4-interpretation-of-boxplot">Question 4: Interpretation of Boxplot</h2>
+<p>According to the boxplot the median of hotels is 0. This is confirmed by our calculations.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(machines<span class="sc">$</span>num_hotels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Vendex_Profit_Maximisation_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>median_hotels <span class="ot">&lt;-</span> <span class="fu">median</span>(machines<span class="sc">$</span>num_hotels)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>median_hotels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+</section>
+<section id="question-5-linear-model" class="level2">
+<h2 class="anchored" data-anchor-id="question-5-linear-model">Question 5: Linear Model</h2>
+<p>Create a linear model with:</p>
+<ol type="1">
+<li>Machine size (big or small)</li>
+<li>Income of the area</li>
+<li>Number of routes in the area</li>
+<li>Number of hotels with 4 and 5 stars in the area</li>
+<li>0-1 Indicator of whether the machine has train_AvgDailyPassengers informed</li>
+<li>Number of other Vendex machines in the area</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create the Avg Daily Passenger Indicator (is_transport_loc)</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>machines <span class="ot">&lt;-</span> machines <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">is_transport_loc =</span> <span class="fu">ifelse</span>(train_AvgDailyPassengers<span class="sc">==</span> <span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">1</span>))</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="co"># create the target variable</span></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>transactions_target <span class="ot">&lt;-</span> transactions <span class="sc">%&gt;%</span> </span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine) <span class="sc">%&gt;%</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">average_daily_items_per_machine =</span> <span class="fu">n</span>() <span class="sc">/</span> <span class="fu">n_distinct</span>(<span class="fu">as.Date</span>(date)))</span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a><span class="co"># merge datasets</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">merge</span>(transactions_target, machines, <span class="at">by =</span> <span class="st">"machine"</span>)</span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a><span class="co"># check that all merged well</span></span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "machine"                         "average_daily_items_per_machine"
+ [3] "location_type"                   "num_vendex_nearby_300"          
+ [5] "train_AvgDailyPassengers"        "train_AvgWorkingDayPassengers"  
+ [7] "n_density_5km"                   "income_average"                 
+ [9] "total_number_of_routes_600"      "num_hotels"                     
+[11] "num_hotels_45"                   "small_machine"                  
+[13] "is_transport_loc"               </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set seed</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2022</span>)</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="co"># create split</span></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>df_split <span class="ot">&lt;-</span> <span class="fu">initial_split</span>(df, <span class="at">prop =</span> .<span class="dv">75</span>, <span class="at">strata =</span> average_daily_items_per_machine) </span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>df_train <span class="ot">&lt;-</span> <span class="fu">training</span>(df_split)</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>df_test <span class="ot">&lt;-</span> <span class="fu">testing</span>(df_split)</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="co"># create score model</span></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>df_lm_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> average_daily_items_per_machine <span class="sc">~</span> small_machine <span class="sc">+</span> income_average <span class="sc">+</span> total_number_of_routes_600 <span class="sc">+</span> num_hotels_45 <span class="sc">+</span> is_transport_loc <span class="sc">+</span> num_vendex_nearby_300 , <span class="at">data =</span> df_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="a-do-all-variables-show-statistical-significance-which-ones-doesnt-how-do-you-know" class="level3">
+<h3 class="anchored" data-anchor-id="a-do-all-variables-show-statistical-significance-which-ones-doesnt-how-do-you-know">a) Do all variables show statistical significance? Which ones doesn’t? How do you know?</h3>
+<p>In order to assess statistical significance we can look at the summary function of the model and look at the t- and p-values as well as the asterixes. If the t-value is above 2.5 or the Pr(&gt;|t|) is lower than a certain threshold:</p>
+<ul>
+<li>0.1/ * –&gt; significance at 10% (probability to make a mistake in the amount of the estimate or higher)</li>
+<li>0.5/** –&gt; significance at 5%</li>
+<li>0.01/*** –&gt; significance at 1%</li>
+</ul>
+<p>For our model this leads to the following interpretation:</p>
+<ul>
+<li><strong>Highly significant (</strong>***): small_machine, is_transport_loc , num_hotels_45</li>
+<li><strong>Significant</strong>(*): num_vendex_nearby_300</li>
+<li><strong>Not significant</strong>: total_number_of_routes_600, income_average</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_lm_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = average_daily_items_per_machine ~ small_machine + 
+    income_average + total_number_of_routes_600 + num_hotels_45 + 
+    is_transport_loc + num_vendex_nearby_300, data = df_train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.853  -2.856  -1.054   1.754  36.599 
+
+Coefficients:
+                             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)                 8.091e+00  8.699e-01   9.301  &lt; 2e-16 ***
+small_machine              -1.700e+00  2.281e-01  -7.454 1.42e-13 ***
+income_average             -1.406e-05  1.621e-05  -0.867   0.3858    
+total_number_of_routes_600  2.450e-03  2.123e-03   1.154   0.2486    
+num_hotels_45               4.491e-01  6.186e-02   7.260 5.83e-13 ***
+is_transport_loc            3.396e+00  2.322e-01  14.627  &lt; 2e-16 ***
+num_vendex_nearby_300      -9.759e-02  4.068e-02  -2.399   0.0166 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.616 on 1723 degrees of freedom
+Multiple R-squared:  0.1868,    Adjusted R-squared:  0.184 
+F-statistic: 65.97 on 6 and 1723 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="b-build-another-linear-model-replacing-total_number_of_routes_600-with-its-log.-does-this-new-variable-show-statistical-significance" class="level3">
+<h3 class="anchored" data-anchor-id="b-build-another-linear-model-replacing-total_number_of_routes_600-with-its-log.-does-this-new-variable-show-statistical-significance">b) Build another linear model replacing “total_number_of_routes_600” with its log. Does this new variable show statistical significance?</h3>
+<p>The variable now is highly significant at 0.001 alpha-level (3 asterixes). Further, we observe that num_vendex_nearby_300 was bumped up in significance from 1 asterix to 3 asterixes. Thus, we will maintain the new variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create new variable</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>df_log <span class="ot">&lt;-</span>  df <span class="sc">%&gt;%</span> </span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">log_transport =</span> <span class="fu">log10</span>(total_number_of_routes_600 <span class="sc">+</span> <span class="dv">1</span>)) <span class="sc">%&gt;%</span> <span class="co"># to avoid infinity values for 0 values</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>total_number_of_routes_600)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df_log)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "machine"                         "average_daily_items_per_machine"
+ [3] "location_type"                   "num_vendex_nearby_300"          
+ [5] "train_AvgDailyPassengers"        "train_AvgWorkingDayPassengers"  
+ [7] "n_density_5km"                   "income_average"                 
+ [9] "num_hotels"                      "num_hotels_45"                  
+[11] "small_machine"                   "is_transport_loc"               
+[13] "log_transport"                  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set seed</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2022</span>)</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>df_log_split <span class="ot">&lt;-</span> <span class="fu">initial_split</span>(df_log, <span class="at">prop =</span> .<span class="dv">75</span>, <span class="at">strata =</span> average_daily_items_per_machine) <span class="co"># especially useful for unequally distributed variables like smoker</span></span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>df_log_train <span class="ot">&lt;-</span> <span class="fu">training</span>(df_log_split)</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>df_log_test <span class="ot">&lt;-</span> <span class="fu">testing</span>(df_log_split)</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a><span class="co">#create adapted model</span></span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>df_lm_model_2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> average_daily_items_per_machine <span class="sc">~</span> small_machine <span class="sc">+</span> income_average <span class="sc">+</span> log_transport <span class="sc">+</span> num_hotels_45 <span class="sc">+</span> num_vendex_nearby_300 <span class="sc">+</span> is_transport_loc , <span class="at">data =</span> df_log_train)</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a><span class="co"># check summary</span></span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_lm_model_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = average_daily_items_per_machine ~ small_machine + 
+    income_average + log_transport + num_hotels_45 + num_vendex_nearby_300 + 
+    is_transport_loc, data = df_log_train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-11.266  -2.894  -0.982   1.651  35.826 
+
+Coefficients:
+                        Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)            6.977e+00  8.879e-01   7.858 6.84e-15 ***
+small_machine         -1.653e+00  2.264e-01  -7.302 4.30e-13 ***
+income_average        -1.802e-05  1.610e-05  -1.120    0.263    
+log_transport          1.321e+00  2.455e-01   5.381 8.40e-08 ***
+num_hotels_45          4.088e-01  5.536e-02   7.384 2.37e-13 ***
+num_vendex_nearby_300 -1.237e-01  2.859e-02  -4.326 1.61e-05 ***
+is_transport_loc       3.188e+00  2.333e-01  13.664  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.58 on 1723 degrees of freedom
+Multiple R-squared:  0.1996,    Adjusted R-squared:  0.1968 
+F-statistic: 71.63 on 6 and 1723 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<section id="final-model" class="level4">
+<h4 class="anchored" data-anchor-id="final-model">Final Model</h4>
+<p>For the final model, we removed income_average as it was not significant and kept the feature engineered variable log_transport.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>df_final <span class="ot">&lt;-</span>  df_log <span class="sc">%&gt;%</span> </span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>income_average)</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a><span class="co"># set seed</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2022</span>)</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>df_final_split <span class="ot">&lt;-</span> <span class="fu">initial_split</span>(df_final, <span class="at">prop =</span> .<span class="dv">75</span>, <span class="at">strata =</span> average_daily_items_per_machine) </span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>df_final_train <span class="ot">&lt;-</span> <span class="fu">training</span>(df_final_split)</span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>df_final_test <span class="ot">&lt;-</span> <span class="fu">testing</span>(df_final_split)</span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="co">#create adapted model</span></span>
+<span id="cb57-11"><a href="#cb57-11" aria-hidden="true" tabindex="-1"></a>final_model<span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> average_daily_items_per_machine <span class="sc">~</span> small_machine <span class="sc">+</span> log_transport <span class="sc">+</span> num_hotels_45 <span class="sc">+</span> num_vendex_nearby_300 <span class="sc">+</span> is_transport_loc , <span class="at">data =</span> df_final_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This model outputs and RMSE of 4.57, indicating that on average the predicted values from the model are about 4.57 units away from the true values of the Average Daily Items per machine.</p>
+<p>The R-squared (R²) value of 0.199 indicates that about 19.9% of the variability in the target variable can be explained by the predictor variables included in the model. This indicates that the model is not able to explain a large proportion of the variability in the data, and there may be other factors or variables that influence the target variable but are not captured by the model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the function to compare predictions vs actual</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>predictions_vs_actual_plot <span class="ot">&lt;-</span> <span class="cf">function</span>(df, x, y, x_title, y_title, title){</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">enquo</span>(x)</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> <span class="fu">enquo</span>(y)</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="sc">!!</span>x, <span class="sc">!!</span>y)) <span class="sc">+</span></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> x_title, <span class="at">y =</span> y_title) <span class="sc">+</span></span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_abline</span>(<span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">slope =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">'lightpink'</span>) <span class="sc">+</span></span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(title) <span class="sc">+</span></span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb58-12"><a href="#cb58-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-13"><a href="#cb58-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Bind the predicted values to the training data </span></span>
+<span id="cb58-14"><a href="#cb58-14" aria-hidden="true" tabindex="-1"></a>base_train_final_predictions <span class="ot">&lt;-</span> df_final_train <span class="sc">%&gt;%</span> </span>
+<span id="cb58-15"><a href="#cb58-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="at">.preds =</span> <span class="fu">predict</span>(final_model, <span class="at">newdata =</span> df_final_train)) </span>
+<span id="cb58-16"><a href="#cb58-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-17"><a href="#cb58-17" aria-hidden="true" tabindex="-1"></a><span class="co"># plot actual vs predicted</span></span>
+<span id="cb58-18"><a href="#cb58-18" aria-hidden="true" tabindex="-1"></a><span class="fu">predictions_vs_actual_plot</span>(<span class="at">df =</span> base_train_final_predictions, <span class="at">x =</span> average_daily_items_per_machine, <span class="at">y =</span> .preds, <span class="at">x_title=</span><span class="st">"True daily items sold"</span>, <span class="at">y_title =</span> <span class="st">"Predicted daily items sold"</span>, <span class="at">title =</span> <span class="st">"Final Model Predictions with training data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Vendex_Profit_Maximisation_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(base_train_final_predictions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "machine"                         "average_daily_items_per_machine"
+ [3] "location_type"                   "num_vendex_nearby_300"          
+ [5] "train_AvgDailyPassengers"        "train_AvgWorkingDayPassengers"  
+ [7] "n_density_5km"                   "num_hotels"                     
+ [9] "num_hotels_45"                   "small_machine"                  
+[11] "is_transport_loc"                "log_transport"                  
+[13] ".preds"                         </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assess performance</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rmse</span>(base_train_final_predictions, <span class="at">truth =</span> average_daily_items_per_machine, <span class="at">estimate =</span> .preds) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric .estimator .estimate
+  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+1 rmse    standard        4.57</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rsq</span>(base_train_final_predictions, <span class="at">truth =</span> average_daily_items_per_machine, <span class="at">estimate =</span> .preds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  .metric .estimator .estimate
+  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+1 rsq     standard       0.199</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="c-how-many-daily-items-less-do-small-machines-sell-all-other-factors-remaining-equal" class="level3">
+<h3 class="anchored" data-anchor-id="c-how-many-daily-items-less-do-small-machines-sell-all-other-factors-remaining-equal">c) How many daily items less do small machines sell all other factors remaining equal?</h3>
+<p>In order to see the impact of having a small machine, holding all other variables constant, we will look at the coefficient. Based on this we can conclude that having a small machine leads o a decrease in machine sales of around 1.65 units on average. This makes intuitive sense and confirms our calculations in Task 1 which showed that smaller machines sell less units on average due to size, choice and location constraints</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check summary from coefficient table</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(final_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = average_daily_items_per_machine ~ small_machine + 
+    log_transport + num_hotels_45 + num_vendex_nearby_300 + is_transport_loc, 
+    data = df_final_train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-11.251  -2.896  -0.976   1.681  35.908 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)            6.04325    0.30480  19.827  &lt; 2e-16 ***
+small_machine         -1.64811    0.22639  -7.280 5.05e-13 ***
+log_transport          1.30814    0.24523   5.334 1.09e-07 ***
+num_hotels_45          0.40165    0.05499   7.303 4.26e-13 ***
+num_vendex_nearby_300 -0.12359    0.02859  -4.323 1.63e-05 ***
+is_transport_loc       3.17453    0.23301  13.624  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.58 on 1724 degrees of freedom
+Multiple R-squared:  0.1991,    Adjusted R-squared:  0.1967 
+F-statistic: 85.69 on 5 and 1724 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+<section id="d-whats-effect-on-machine-sales-does-having-other-nearby-machines-all-other-factors-remaining-equal" class="level3">
+<h3 class="anchored" data-anchor-id="d-whats-effect-on-machine-sales-does-having-other-nearby-machines-all-other-factors-remaining-equal">d) What’s effect on machine sales does having other nearby machines all other factors remaining equal?</h3>
+<p>Same as before we can look at the coefficient here. Having other machines nearby results in an average loss of -0.12 units. This is also intuitive. If there is another machine nearby, sales of the respective machines will go down due to increased competitive pressure</p>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1"></h3>
+</section>
+<section id="e-what-are-the-real-daily-sales-of-the-top-bottom20-machines-according-to-your-model-whats-the-top20bottom20-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="e-what-are-the-real-daily-sales-of-the-top-bottom20-machines-according-to-your-model-whats-the-top20bottom20-ratio">e) What are the real daily sales of the top &amp; bottom20% machines according to your model? What’s the top20%/bottom20% ratio?</h3>
+<p>The real daily sales of our top 20% machines are 12.15, and of our bottom 20% are 6.15. The ratio thus is 1.97.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating the predictions </span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>final_predictions <span class="ot">&lt;-</span> df_final_train <span class="sc">%&gt;%</span> </span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bind_cols</span>(<span class="fu">predict</span>(final_model, <span class="at">newdata =</span> df_final_train)) <span class="sc">%&gt;%</span> </span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">prediction =</span> ...<span class="dv">13</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+• `` -&gt; `...13`</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Order the data by the predictions in descending order and extract the top 20% and bottom 20% of the machines based on their predictions:</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>top_20_percent_machines <span class="ot">&lt;-</span> final_predictions <span class="sc">%&gt;%</span> </span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prediction)) <span class="sc">%&gt;%</span> </span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="at">n =</span> <span class="fu">nrow</span>(final_predictions) <span class="sc">*</span> <span class="fl">0.2</span>)</span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>bottom_20_percent_machines <span class="ot">&lt;-</span> final_predictions <span class="sc">%&gt;%</span> </span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(prediction)) <span class="sc">%&gt;%</span> </span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tail</span>(<span class="at">n =</span> <span class="fu">nrow</span>(final_predictions) <span class="sc">*</span> <span class="fl">0.2</span>)</span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Extract the real daily sales of the top 20% and bottom 20% machines:</span></span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a>top_20_percent_real_daily_sales <span class="ot">&lt;-</span> top_20_percent_machines <span class="sc">%&gt;%</span> </span>
+<span id="cb69-12"><a href="#cb69-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(average_daily_items_per_machine) <span class="sc">%&gt;%</span> </span>
+<span id="cb69-13"><a href="#cb69-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="fu">mean</span>(average_daily_items_per_machine))</span>
+<span id="cb69-14"><a href="#cb69-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-15"><a href="#cb69-15" aria-hidden="true" tabindex="-1"></a>bottom_20_percent_real_daily_sales <span class="ot">&lt;-</span> bottom_20_percent_machines <span class="sc">%&gt;%</span> </span>
+<span id="cb69-16"><a href="#cb69-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(average_daily_items_per_machine) <span class="sc">%&gt;%</span> </span>
+<span id="cb69-17"><a href="#cb69-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="fu">mean</span>(average_daily_items_per_machine))</span>
+<span id="cb69-18"><a href="#cb69-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-19"><a href="#cb69-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the top20%/bottom20% ratio:</span></span>
+<span id="cb69-20"><a href="#cb69-20" aria-hidden="true" tabindex="-1"></a>ratio <span class="ot">&lt;-</span> top_20_percent_real_daily_sales<span class="sc">/</span>bottom_20_percent_real_daily_sales</span>
+<span id="cb69-21"><a href="#cb69-21" aria-hidden="true" tabindex="-1"></a>ratio</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  mean(average_daily_items_per_machine)
+1                              1.974503</code></pre>
+</div>
+</div>
+</section>
+<section id="f-given-the-following-2-locations-for-a-big-machine" class="level3">
+<h3 class="anchored" data-anchor-id="f-given-the-following-2-locations-for-a-big-machine">f) Given the following 2 locations for a big machine:</h3>
+<p>i. Supermarket entrance, 2 nearby hotels of 4 stars, 20 transport routes, no nearby machines ii. Transport station, no nearby hotels of 4 or 5 stars, 10 transport routes nearby, 3 nearby Vendex machines Which location would you choose and why?</p>
+<p>Based on our current model, we would prefer the second location as it gives us on average higher daily unit sales by 1.09.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define dataframes with relevant characteristics</span></span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>location1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">is_transport_loc =</span> <span class="dv">0</span>, </span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">num_hotels_45 =</span> <span class="dv">2</span>,</span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">log_transport =</span> <span class="fu">log</span>(<span class="dv">20</span>),</span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">num_vendex_nearby_300 =</span> <span class="dv">0</span>, </span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">small_machine =</span> <span class="dv">0</span></span>
+<span id="cb71-9"><a href="#cb71-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a>location2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">is_transport_loc =</span> <span class="dv">1</span>, </span>
+<span id="cb71-13"><a href="#cb71-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">num_hotels_45 =</span> <span class="dv">0</span>,</span>
+<span id="cb71-14"><a href="#cb71-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">log_transport =</span> <span class="fu">log</span>(<span class="dv">10</span>),</span>
+<span id="cb71-15"><a href="#cb71-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">num_vendex_nearby_300 =</span> <span class="dv">3</span>, </span>
+<span id="cb71-16"><a href="#cb71-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">small_machine =</span> <span class="dv">0</span></span>
+<span id="cb71-17"><a href="#cb71-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb71-18"><a href="#cb71-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-19"><a href="#cb71-19" aria-hidden="true" tabindex="-1"></a>sales_loc1 <span class="ot">&lt;-</span> <span class="fu">predict</span>(final_model, <span class="at">newdata =</span> location1) </span>
+<span id="cb71-20"><a href="#cb71-20" aria-hidden="true" tabindex="-1"></a>sales_loc2 <span class="ot">&lt;-</span> <span class="fu">predict</span>(final_model, <span class="at">newdata =</span> location2) </span>
+<span id="cb71-21"><a href="#cb71-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb71-22"><a href="#cb71-22" aria-hidden="true" tabindex="-1"></a>diff <span class="ot">&lt;-</span> sales_loc2 <span class="sc">-</span> sales_loc1 </span>
+<span id="cb71-23"><a href="#cb71-23" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Sales Location 1:"</span>, sales_loc1)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sales Location 1: 10.7653815308787"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Sales Location 2:"</span>, sales_loc2))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sales Location 2: 11.8590989155943"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Sales Location 2 has higher daily average unit sales by"</span>, diff ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sales Location 2 has higher daily average unit sales by 1.09371738471558"</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="part-2-introduction-to-probability-models" class="level1">
+<h1>Part 2: Introduction to Probability Models</h1>
+<section id="creating-the-relevant-variable-of-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-relevant-variable-of-the-model">Creating the relevant variable of the model</h2>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>Load the data and do some initial data exploration. Then merge the transactional dataset with the machine failures data set setting failure variable to 0 when no failure is recorded</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the data</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>failures <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../machine_failures.csv"</span>)</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>transactions <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../transactional_data.csv"</span>)</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb77-5"><a href="#cb77-5" aria-hidden="true" tabindex="-1"></a><span class="co"># explore</span></span>
+<span id="cb77-6"><a href="#cb77-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(failures)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    machine           column       timestamp            failure 
+ Min.   :   1.0   Min.   : 0.00   Length:12378       Min.   :1  
+ 1st Qu.: 858.2   1st Qu.:13.00   Class :character   1st Qu.:1  
+ Median :1467.5   Median :24.00   Mode  :character   Median :1  
+ Mean   :1459.4   Mean   :27.25                      Mean   :1  
+ 3rd Qu.:2072.0   3rd Qu.:39.00                      3rd Qu.:1  
+ Max.   :2724.0   Max.   :69.00                      Max.   :1  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(transactions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    machine      timestamp             date               column     
+ Min.   :   1   Length:1840477     Length:1840477     Min.   : 0.00  
+ 1st Qu.: 880   Class :character   Class :character   1st Qu.:13.00  
+ Median :1472   Mode  :character   Mode  :character   Median :25.00  
+ Mean   :1462                                         Mean   :27.03  
+ 3rd Qu.:2072                                         3rd Qu.:39.00  
+ Max.   :2724                                         Max.   :69.00  
+ product_name      
+ Length:1840477    
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(failures)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  machine column           timestamp failure
+1       1     50 2017-01-23 15:29:36       1
+2       1     55 2017-01-28 11:14:06       1
+3       1     33 2017-02-13 14:16:34       1
+4       1     43 2017-02-27 09:14:18       1
+5       1     47 2017-03-21 09:24:19       1
+6       1     40 2017-03-26 12:21:14       1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(transactions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  machine           timestamp       date column        product_name
+1       1 2017-01-04 14:02:34 2017-01-04     55 water_(sparkling)_1
+2       1 2017-01-02 15:00:20 2017-01-02     55 water_(sparkling)_1
+3       1 2017-01-02 14:35:57 2017-01-02     56 water_(sparkling)_1
+4       1 2017-01-13 14:01:38 2017-01-13     56 water_(sparkling)_1
+5       1 2017-01-11 13:34:12 2017-01-11     56 water_(sparkling)_1
+6       1 2017-01-29 11:34:31 2017-01-29     56 water_(sparkling)_1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check rows and columnnames for merger (commented out for better readability) </span></span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co">#colnames(transactions)</span></span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a><span class="co">#colnames(failures)</span></span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a><span class="co">#nrow(failures)</span></span>
+<span id="cb85-5"><a href="#cb85-5" aria-hidden="true" tabindex="-1"></a><span class="co">#nrow(transactions)</span></span>
+<span id="cb85-6"><a href="#cb85-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb85-7"><a href="#cb85-7" aria-hidden="true" tabindex="-1"></a><span class="co"># merge failures with the transactions dataset</span></span>
+<span id="cb85-8"><a href="#cb85-8" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">merge</span>(transactions,failures, <span class="at">by=</span><span class="fu">c</span>(<span class="st">"column"</span>,<span class="st">"machine"</span>, <span class="st">"timestamp"</span>), <span class="at">all.x=</span>T)</span>
+<span id="cb85-9"><a href="#cb85-9" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">failure =</span> <span class="fu">replace_na</span>(failure, <span class="dv">0</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>Create a variable called “last_vend” containing the timestamp of the previous sale of each machine</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert the 'timestamp' column to a POSIXct format</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>timestamp <span class="ot">&lt;-</span> <span class="fu">as.POSIXct</span>(df<span class="sc">$</span>timestamp, <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%S"</span>)</span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a><span class="co"># sort the data by machine and timestamp</span></span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a>df<span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(machine, timestamp)</span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-8"><a href="#cb86-8" aria-hidden="true" tabindex="-1"></a><span class="co"># create a new column 'last_vend' containing the timestamp of the previous sale of each machine</span></span>
+<span id="cb86-9"><a href="#cb86-9" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb86-10"><a href="#cb86-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine) <span class="sc">%&gt;%</span> </span>
+<span id="cb86-11"><a href="#cb86-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">last_vend =</span> <span class="fu">lag</span>(timestamp)) <span class="sc">%&gt;%</span> </span>
+<span id="cb86-12"><a href="#cb86-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>Create a new column ‘deltahours’ containing the hours that passed since the last sale for each sale</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we changd the unit format of deltahours to numeric values to avoid messiness later on with calculating the ratios</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>deltahours <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">difftime</span>(df<span class="sc">$</span>timestamp, df<span class="sc">$</span>last_vend, <span class="at">units =</span> <span class="st">"hours"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>Create an auxiliary data table called “machine_daily_average” with the average daily sales per machine. Use this auxiliary table to attach to every row of the transactional data table the average daily sales per machine.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for initial intuition: look for daily sales for machine</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>daily_sales <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine, date) <span class="sc">%&gt;%</span> </span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total_sales_per_day =</span> <span class="fu">length</span>(column))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`summarise()` has grouped output by 'machine'. You can override using the
+`.groups` argument.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co"># group the daily sales by machine, and calculate the average daily sales per machine</span></span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>machine_daily_average <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine) <span class="sc">%&gt;%</span></span>
+<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_daily_sales =</span> <span class="fu">n</span>() <span class="sc">/</span> <span class="fu">n_distinct</span>(<span class="fu">as.Date</span>(date)))</span>
+<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb90-6"><a href="#cb90-6" aria-hidden="true" tabindex="-1"></a><span class="co"># merge the machine_daily_average table with the transactions table to attach the average daily sales per machine to each row</span></span>
+<span id="cb90-7"><a href="#cb90-7" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">merge</span>(df, machine_daily_average, <span class="at">by =</span> <span class="st">"machine"</span>, <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p>Create a new variable called “delta” in the transactional data table containing a normalized version of deltahours.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate the delta</span></span>
+<span id="cb91-2"><a href="#cb91-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb91-3"><a href="#cb91-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">delta =</span> <span class="fu">as.numeric</span>(deltahours <span class="sc">/</span> (<span class="dv">24</span> <span class="sc">/</span> avg_daily_sales)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="creating-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-model">Creating the model</h2>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<p>Select 30% of the machines in the transactional data for testing and 70% of the machines for training and train a linear logistic regression model called “m” to predict whether a machine has a failure as a function of variable delta.</p>
+<p>The intercept of the function is -6.90 and the delta is 0.56. When reversing the log of the intercept we can see that when the delta is 0, the probability of failure is 0.1%.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># select 70% of machines for training</span></span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">2022</span>)</span>
+<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a>train_machines <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">unique</span>(df<span class="sc">$</span>machine), <span class="fu">round</span>(<span class="fl">0.7</span> <span class="sc">*</span> <span class="fu">length</span>(<span class="fu">unique</span>(df<span class="sc">$</span>machine))), <span class="at">replace =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a><span class="co"># split the data into training and testing sets</span></span>
+<span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a>train <span class="ot">&lt;-</span> df[df<span class="sc">$</span>machine <span class="sc">%in%</span> train_machines, ]</span>
+<span id="cb92-7"><a href="#cb92-7" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> df[<span class="sc">!</span>df<span class="sc">$</span>machine <span class="sc">%in%</span> train_machines, ]</span>
+<span id="cb92-8"><a href="#cb92-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-9"><a href="#cb92-9" aria-hidden="true" tabindex="-1"></a><span class="co"># train the logistic regression model</span></span>
+<span id="cb92-10"><a href="#cb92-10" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">glm</span>(failure <span class="sc">~</span> delta, <span class="at">data =</span> train, <span class="at">family =</span> binomial)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># print coefficients and intercept</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>delta <span class="ot">&lt;-</span> m<span class="sc">$</span>coefficients[<span class="st">"delta"</span>]</span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a>intercept <span class="ot">&lt;-</span> m<span class="sc">$</span>coefficients[<span class="st">"(Intercept)"</span>]</span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">'Intercept:'</span>, intercept, <span class="st">'Delta:'</span>, delta))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Intercept: -6.90465900782892 Delta: 0.561031107047334"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for interpretation we decided to reverse log on the intercept </span></span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>logit2prob <span class="ot">&lt;-</span> <span class="cf">function</span>(logit){</span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>  odds <span class="ot">&lt;-</span> <span class="fu">exp</span>(logit)</span>
+<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a>  prob <span class="ot">&lt;-</span> odds <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> odds)</span>
+<span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(prob)</span>
+<span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb96-7"><a href="#cb96-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb96-8"><a href="#cb96-8" aria-hidden="true" tabindex="-1"></a><span class="co"># compute probability of failure when delta = 0</span></span>
+<span id="cb96-9"><a href="#cb96-9" aria-hidden="true" tabindex="-1"></a>prob_delta_0 <span class="ot">&lt;-</span> <span class="fu">logit2prob</span>(intercept)</span>
+<span id="cb96-10"><a href="#cb96-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb96-11"><a href="#cb96-11" aria-hidden="true" tabindex="-1"></a><span class="co"># print updated message</span></span>
+<span id="cb96-12"><a href="#cb96-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">'The probability of failure when delta equals 0 is'</span>, prob_delta_0, <span class="st">'</span><span class="sc">\n</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The probability of failure when delta equals 0 is 0.001002096 </code></pre>
+</div>
+</div>
+</section>
+<section id="a-what-is-the-roc-auc-for-the-train-and-test-set" class="level3">
+<h3 class="anchored" data-anchor-id="a-what-is-the-roc-auc-for-the-train-and-test-set">6a: What is the ROC AUC for the train and test set?</h3>
+<p>The ROC AUC for the Test set is 0.922 and for the Training set it is 0.919. These are very close values which indicates that there are no signs of overfitting.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtain predicted probabilities for train set</span></span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>train<span class="sc">$</span>pred_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(m, train, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate AUC on train set</span></span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a>train_auc <span class="ot">&lt;-</span> <span class="fu">roc</span>(train<span class="sc">$</span>failure, train<span class="sc">$</span>pred_prob)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Setting levels: control = 0, case = 1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Setting direction: controls &lt; cases</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">auc</span>(train_auc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Area under the curve: 0.9191</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Obtain predicted probabilities for test set</span></span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a>test<span class="sc">$</span>pred_prob <span class="ot">&lt;-</span> <span class="fu">predict</span>(m, test, <span class="at">type =</span> <span class="st">"response"</span>)</span>
+<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate AUC on test set</span></span>
+<span id="cb103-5"><a href="#cb103-5" aria-hidden="true" tabindex="-1"></a>test_auc <span class="ot">&lt;-</span> <span class="fu">roc</span>(test<span class="sc">$</span>failure, test<span class="sc">$</span>pred_prob)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Setting levels: control = 0, case = 1
+Setting direction: controls &lt; cases</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">auc</span>(test_auc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Area under the curve: 0.9222</code></pre>
+</div>
+</div>
+</section>
+<section id="b-plot-the-function-of-probability-of-failure-with-respect-to-delta-to-gain-intuition-includes-6c-i." class="level3">
+<h3 class="anchored" data-anchor-id="b-plot-the-function-of-probability-of-failure-with-respect-to-delta-to-gain-intuition-includes-6c-i.">6b: Plot the function of probability of failure with respect to delta to gain intuition (includes 6c i.)</h3>
+<p>The threshold delta for Medium Risk alarms is 13.03 and the delta for High Risk Alarms is 14.78</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 6b: Base Graph</span></span>
+<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a function to calculate the predicted probability of failure</span></span>
+<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a>prob_func <span class="ot">&lt;-</span> <span class="cf">function</span>(delta_val) {</span>
+<span id="cb107-4"><a href="#cb107-4" aria-hidden="true" tabindex="-1"></a>  prob_val <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(<span class="sc">-</span>(<span class="fu">coef</span>(m)[<span class="dv">1</span>] <span class="sc">+</span> <span class="fu">coef</span>(m)[<span class="dv">2</span>] <span class="sc">*</span> delta_val)))</span>
+<span id="cb107-5"><a href="#cb107-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(prob_val)</span>
+<span id="cb107-6"><a href="#cb107-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb107-7"><a href="#cb107-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-8"><a href="#cb107-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the predicted probabilities for the sequence of delta values</span></span>
+<span id="cb107-9"><a href="#cb107-9" aria-hidden="true" tabindex="-1"></a>delta_seq <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="at">by =</span> <span class="fl">0.1</span>)</span>
+<span id="cb107-10"><a href="#cb107-10" aria-hidden="true" tabindex="-1"></a>prob_seq <span class="ot">&lt;-</span> <span class="fu">sapply</span>(delta_seq, prob_func)</span>
+<span id="cb107-11"><a href="#cb107-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-12"><a href="#cb107-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the curve of predicted probabilities against delta values</span></span>
+<span id="cb107-13"><a href="#cb107-13" aria-hidden="true" tabindex="-1"></a><span class="fu">curve</span>(<span class="fu">prob_func</span>(x), <span class="at">from =</span> <span class="dv">0</span>, <span class="at">to =</span> <span class="dv">20</span>, <span class="at">xlab =</span> <span class="st">"Delta"</span>, <span class="at">ylab =</span> <span class="st">"Probability of failure"</span>)</span>
+<span id="cb107-14"><a href="#cb107-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-15"><a href="#cb107-15" aria-hidden="true" tabindex="-1"></a><span class="do">##############</span></span>
+<span id="cb107-16"><a href="#cb107-16" aria-hidden="true" tabindex="-1"></a><span class="co">#6ci</span></span>
+<span id="cb107-17"><a href="#cb107-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the probability functions for the med-risk and high-risk alarms</span></span>
+<span id="cb107-18"><a href="#cb107-18" aria-hidden="true" tabindex="-1"></a>med_risk_func <span class="ot">&lt;-</span> <span class="cf">function</span>(delta_val) {</span>
+<span id="cb107-19"><a href="#cb107-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">prob_func</span>(delta_val) <span class="sc">-</span> <span class="fl">0.6</span>)</span>
+<span id="cb107-20"><a href="#cb107-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb107-21"><a href="#cb107-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-22"><a href="#cb107-22" aria-hidden="true" tabindex="-1"></a>high_risk_func <span class="ot">&lt;-</span> <span class="cf">function</span>(delta_val) {</span>
+<span id="cb107-23"><a href="#cb107-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">prob_func</span>(delta_val) <span class="sc">-</span> <span class="fl">0.8</span>)</span>
+<span id="cb107-24"><a href="#cb107-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb107-25"><a href="#cb107-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb107-26"><a href="#cb107-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Find the roots of the probability functions to determine the delta values where the med-risk and high-risk alarms will fire</span></span>
+<span id="cb107-27"><a href="#cb107-27" aria-hidden="true" tabindex="-1"></a>med_risk_delta <span class="ot">&lt;-</span> <span class="fu">uniroot</span>(med_risk_func, <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>))<span class="sc">$</span>root</span>
+<span id="cb107-28"><a href="#cb107-28" aria-hidden="true" tabindex="-1"></a>high_risk_delta <span class="ot">&lt;-</span> <span class="fu">uniroot</span>(high_risk_func, <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">20</span>))<span class="sc">$</span>root</span>
+<span id="cb107-29"><a href="#cb107-29" aria-hidden="true" tabindex="-1"></a><span class="fu">paste</span>(<span class="st">'Medium Risk Threshold:'</span>, med_risk_delta, <span class="st">'High Risk Threshold:'</span>, high_risk_delta)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Medium Risk Threshold: 13.0297998986025 High Risk Threshold: 14.7780637496776"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb109"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Add values to our plot</span></span>
+<span id="cb109-2"><a href="#cb109-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Add horizontal lines at 60% and 80% probability levels</span></span>
+<span id="cb109-3"><a href="#cb109-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="fl">0.6</span>, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb109-4"><a href="#cb109-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="fl">0.8</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
+<span id="cb109-5"><a href="#cb109-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb109-6"><a href="#cb109-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add points for med-risk and high-risk thresholds</span></span>
+<span id="cb109-7"><a href="#cb109-7" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(med_risk_delta, <span class="fl">0.6</span>, <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb109-8"><a href="#cb109-8" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(high_risk_delta, <span class="fl">0.8</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">pch =</span> <span class="dv">16</span>)</span>
+<span id="cb109-9"><a href="#cb109-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb109-10"><a href="#cb109-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the delta value as text next to the points</span></span>
+<span id="cb109-11"><a href="#cb109-11" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(med_risk_delta <span class="sc">+</span> <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fu">paste0</span>(<span class="st">"Med-Risk Alarm: "</span>, <span class="fu">round</span>(med_risk_delta, <span class="dv">2</span>)), <span class="at">pos =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"blue"</span>)</span>
+<span id="cb109-12"><a href="#cb109-12" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(high_risk_delta <span class="sc">+</span> <span class="fl">0.5</span>, <span class="fl">0.5</span>, <span class="fu">paste0</span>(<span class="st">"High-Risk Alarm: "</span>, <span class="fu">round</span>(high_risk_delta, <span class="dv">2</span>)), <span class="at">pos =</span> <span class="dv">3</span>, <span class="at">offset =</span> <span class="dv">3</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Vendex_Profit_Maximisation_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="cii-alarms-per-day" class="level3">
+<h3 class="anchored" data-anchor-id="cii-alarms-per-day">6cii: Alarms per day</h3>
+<p>When only accounting for the medium risk alarms, we will face a daily average of 41 alarms (Total of 3694 over the complete period). When only accounting for the high risk alarms, we will face a daily average of 28 alarms (Total of 2484 over the complete period).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the average number of med-risk alarms fired per day</span></span>
+<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>med_risk_alarms <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> med_risk_delta) <span class="sc">%&gt;%</span> </span>
+<span id="cb110-4"><a href="#cb110-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Total_med_risk_alarms =</span> <span class="fu">n</span>(), <span class="at">med_risk_daily_alarm =</span> Total_med_risk_alarms <span class="sc">/</span> <span class="fu">n_distinct</span>(date))</span>
+<span id="cb110-5"><a href="#cb110-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-6"><a href="#cb110-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the average number of high-risk alarms fired per day</span></span>
+<span id="cb110-7"><a href="#cb110-7" aria-hidden="true" tabindex="-1"></a>high_risk_alarms <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb110-8"><a href="#cb110-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> high_risk_delta) <span class="sc">%&gt;%</span> </span>
+<span id="cb110-9"><a href="#cb110-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Total_high_risk_alarms =</span> <span class="fu">n</span>(), <span class="at">high_risk_daily_alarm =</span> Total_high_risk_alarms <span class="sc">/</span> <span class="fu">n_distinct</span>(date))</span>
+<span id="cb110-10"><a href="#cb110-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-11"><a href="#cb110-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-12"><a href="#cb110-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the med-risk and high-risk alarms into a single data frame</span></span>
+<span id="cb110-13"><a href="#cb110-13" aria-hidden="true" tabindex="-1"></a>alarm_summary <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb110-14"><a href="#cb110-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">Alarm_Type =</span> <span class="fu">c</span>(<span class="st">"Med-Risk"</span>, <span class="st">"High-Risk"</span>),</span>
+<span id="cb110-15"><a href="#cb110-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Total_Alarms =</span> <span class="fu">c</span>(med_risk_alarms<span class="sc">$</span>Total_med_risk_alarms, high_risk_alarms<span class="sc">$</span>Total_high_risk_alarms),</span>
+<span id="cb110-16"><a href="#cb110-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">Avg_Alarms_Per_Day =</span> <span class="fu">c</span>(med_risk_alarms<span class="sc">$</span>med_risk_daily_alarm, high_risk_alarms<span class="sc">$</span>high_risk_daily_alarm)</span>
+<span id="cb110-17"><a href="#cb110-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb110-18"><a href="#cb110-18" aria-hidden="true" tabindex="-1"></a>alarm_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Alarm_Type Total_Alarms Avg_Alarms_Per_Day
+1   Med-Risk         3694           41.04444
+2  High-Risk         2484           27.60000</code></pre>
+</div>
+</div>
+</section>
+<section id="ciii-proportion-of-false-alarms" class="level3">
+<h3 class="anchored" data-anchor-id="ciii-proportion-of-false-alarms">6ciii: Proportion of false alarms</h3>
+<p>For Medium-risk alarms we face a FPR of 20.14% and for High-Risk only alarms we face a False-Positive Rate of 8.85%.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="co"># proportion of false med_alarms</span></span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>proportion_false_med_alarms <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> med_risk_delta) <span class="sc">%&gt;%</span> </span>
+<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Total_med_false_alarms =</span> <span class="fu">sum</span>(failure <span class="sc">==</span> <span class="dv">0</span>), <span class="at">False_med_daily_alarms =</span> Total_med_false_alarms<span class="sc">/</span><span class="fu">n_distinct</span>(date), <span class="at">prop_false_med_alarms =</span> False_med_daily_alarms<span class="sc">/</span>(<span class="fu">n</span>()<span class="sc">/</span><span class="fu">n_distinct</span>(date)))</span>
+<span id="cb112-5"><a href="#cb112-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-6"><a href="#cb112-6" aria-hidden="true" tabindex="-1"></a><span class="co"># proportion of false high_alarms</span></span>
+<span id="cb112-7"><a href="#cb112-7" aria-hidden="true" tabindex="-1"></a>proportion_false_high_alarms <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb112-8"><a href="#cb112-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> high_risk_delta) <span class="sc">%&gt;%</span> </span>
+<span id="cb112-9"><a href="#cb112-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">Total_high_false_alarms =</span> <span class="fu">sum</span>(failure <span class="sc">==</span> <span class="dv">0</span>), <span class="at">False_high_daily_alarms =</span> Total_high_false_alarms<span class="sc">/</span><span class="fu">n_distinct</span>(date), <span class="at">prop_false_high_alarms =</span> False_high_daily_alarms<span class="sc">/</span>(<span class="fu">n</span>()<span class="sc">/</span><span class="fu">n_distinct</span>(date)))</span>
+<span id="cb112-10"><a href="#cb112-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-11"><a href="#cb112-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-12"><a href="#cb112-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the med-risk and high-risk alarms into a single data frame</span></span>
+<span id="cb112-13"><a href="#cb112-13" aria-hidden="true" tabindex="-1"></a>alarm_summary_updated <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb112-14"><a href="#cb112-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">Alarm_Type =</span> <span class="fu">c</span>(<span class="st">"Med-Risk"</span>, <span class="st">"High-Risk"</span>),</span>
+<span id="cb112-15"><a href="#cb112-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">Total_Alarms =</span> <span class="fu">c</span>(med_risk_alarms<span class="sc">$</span>Total_med_risk_alarms, high_risk_alarms<span class="sc">$</span>Total_high_risk_alarms),</span>
+<span id="cb112-16"><a href="#cb112-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">Total_False_Alarms =</span> <span class="fu">c</span>(proportion_false_med_alarms<span class="sc">$</span>Total_med_false_alarms, proportion_false_high_alarms<span class="sc">$</span>Total_high_false_alarms),</span>
+<span id="cb112-17"><a href="#cb112-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">Avg_Alarms_Per_Day =</span> <span class="fu">c</span>(med_risk_alarms<span class="sc">$</span>med_risk_daily_alarm, high_risk_alarms<span class="sc">$</span>high_risk_daily_alarm),</span>
+<span id="cb112-18"><a href="#cb112-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">Avg_False_Alarms_per_Day =</span> <span class="fu">c</span>(proportion_false_med_alarms<span class="sc">$</span>False_med_daily_alarms , proportion_false_high_alarms<span class="sc">$</span>False_high_daily_alarms),</span>
+<span id="cb112-19"><a href="#cb112-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">prop_false_alarms =</span> <span class="fu">c</span>(proportion_false_med_alarms<span class="sc">$</span>prop_false_med_alarms , proportion_false_high_alarms<span class="sc">$</span>prop_false_high_alarms )</span>
+<span id="cb112-20"><a href="#cb112-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb112-21"><a href="#cb112-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb112-22"><a href="#cb112-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb112-23"><a href="#cb112-23" aria-hidden="true" tabindex="-1"></a>alarm_summary_updated </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Alarm_Type Total_Alarms Total_False_Alarms Avg_Alarms_Per_Day
+1   Med-Risk         3694                744           41.04444
+2  High-Risk         2484                220           27.60000
+  Avg_False_Alarms_per_Day prop_false_alarms
+1                 8.266667        0.20140769
+2                 2.444444        0.08856683</code></pre>
+</div>
+</div>
+</section>
+<section id="d-calculate-the-annual-profit-of-both-ews-systems" class="level3">
+<h3 class="anchored" data-anchor-id="d-calculate-the-annual-profit-of-both-ews-systems">6d: Calculate the annual profit of both EWS systems</h3>
+<p>If we set use the new medium-risk-EWS the annual profit we will be increased by 2.43%. If we use the high-risk version, our profit will increase by 2.6%. Thus we recommend implementing the high-risk EWS.</p>
+<ol type="1">
+<li>Select transactions that would trigger the alarm</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a>df_med_alarm <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> med_risk_delta) </span>
+<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb114-5"><a href="#cb114-5" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb114-6"><a href="#cb114-6" aria-hidden="true" tabindex="-1"></a>df_high_alarm <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> </span>
+<span id="cb114-7"><a href="#cb114-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(delta <span class="sc">&gt;</span> high_risk_delta) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li>Calculate threshold hours according to the alarm threshold</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>df_med_alarm <span class="ot">&lt;-</span> df_med_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb115-3"><a href="#cb115-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine, date) <span class="sc">%&gt;%</span> </span>
+<span id="cb115-4"><a href="#cb115-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">daily_sales =</span> <span class="fu">length</span>(column), <span class="at">threshold_hours =</span> med_risk_delta <span class="sc">*</span> (<span class="dv">24</span> <span class="sc">/</span> avg_daily_sales))</span>
+<span id="cb115-5"><a href="#cb115-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb115-6"><a href="#cb115-6" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb115-7"><a href="#cb115-7" aria-hidden="true" tabindex="-1"></a>df_high_alarm <span class="ot">&lt;-</span> df_high_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb115-8"><a href="#cb115-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(machine, date) <span class="sc">%&gt;%</span> </span>
+<span id="cb115-9"><a href="#cb115-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">daily_sales =</span> <span class="fu">length</span>(column), <span class="at">threshold_hours =</span> med_risk_delta <span class="sc">*</span> (<span class="dv">24</span> <span class="sc">/</span> avg_daily_sales))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="1">
+<li>Adjust threshold hours and delta for the repair time</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb116-2"><a href="#cb116-2" aria-hidden="true" tabindex="-1"></a>df_med_alarm <span class="ot">&lt;-</span> df_med_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb116-3"><a href="#cb116-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">threshold_hours_fixed =</span> threshold_hours <span class="sc">+</span> <span class="fl">1.5</span>, <span class="at">delta_fixed=</span> threshold_hours_fixed <span class="sc">*</span> (avg_daily_sales<span class="sc">/</span> <span class="dv">24</span>))</span>
+<span id="cb116-4"><a href="#cb116-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb116-5"><a href="#cb116-5" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb116-6"><a href="#cb116-6" aria-hidden="true" tabindex="-1"></a>df_high_alarm <span class="ot">&lt;-</span> df_high_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb116-7"><a href="#cb116-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">threshold_hours_fixed =</span> threshold_hours <span class="sc">+</span> <span class="fl">1.5</span>, <span class="at">delta_fixed=</span> threshold_hours_fixed <span class="sc">*</span> (avg_daily_sales<span class="sc">/</span> <span class="dv">24</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li>Calculate won sales</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a>df_med_alarm <span class="ot">&lt;-</span> df_med_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">won_sales =</span> failure <span class="sc">*</span> (delta <span class="sc">-</span> delta_fixed))</span>
+<span id="cb117-4"><a href="#cb117-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb117-5"><a href="#cb117-5" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb117-6"><a href="#cb117-6" aria-hidden="true" tabindex="-1"></a>df_high_alarm <span class="ot">&lt;-</span> df_high_alarm <span class="sc">%&gt;%</span> </span>
+<span id="cb117-7"><a href="#cb117-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">won_sales =</span> failure <span class="sc">*</span> (delta <span class="sc">-</span> delta_fixed))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="1">
+<li>Calculate additional revenues as a sum of won sales times the average margin</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a>additional_revenues_med_risk <span class="ot">&lt;-</span> <span class="fu">sum</span>(df_med_alarm<span class="sc">$</span>won_sales, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1.7</span></span>
+<span id="cb118-3"><a href="#cb118-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb118-4"><a href="#cb118-4" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb118-5"><a href="#cb118-5" aria-hidden="true" tabindex="-1"></a>additional_revenues_high_risk <span class="ot">&lt;-</span> <span class="fu">sum</span>(df_high_alarm<span class="sc">$</span>won_sales, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="fl">1.7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="6" type="1">
+<li>Calculate cost of the system as the cost of sending an operator to check times the number of “false alarms”.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a><span class="co"># find out time span of data to adjust the current FPR</span></span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>earliest_date <span class="ot">&lt;-</span> <span class="fu">min</span>(df<span class="sc">$</span>date)</span>
+<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>latest_date <span class="ot">&lt;-</span> <span class="fu">max</span>(df<span class="sc">$</span>date)</span>
+<span id="cb119-4"><a href="#cb119-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb119-5"><a href="#cb119-5" aria-hidden="true" tabindex="-1"></a>time_span <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">difftime</span>(latest_date, earliest_date, <span class="at">units =</span> <span class="st">"weeks"</span>))<span class="sc">/</span><span class="dv">4</span></span>
+<span id="cb119-6"><a href="#cb119-6" aria-hidden="true" tabindex="-1"></a>time_factor <span class="ot">&lt;-</span> <span class="dv">12</span><span class="sc">/</span>time_span</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="co"># current costs</span></span>
+<span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a>old_costs <span class="ot">&lt;-</span> <span class="fu">nrow</span>(<span class="fu">unique</span>(df[, <span class="st">"machine"</span>, <span class="at">drop =</span> <span class="cn">FALSE</span>])) <span class="sc">*</span> (<span class="fl">2.2</span><span class="sc">/</span>time_factor) <span class="sc">*</span> <span class="dv">10</span></span>
+<span id="cb120-3"><a href="#cb120-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb120-4"><a href="#cb120-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb120-5"><a href="#cb120-5" aria-hidden="true" tabindex="-1"></a>cost_of_system_med_risk <span class="ot">&lt;-</span> proportion_false_med_alarms<span class="sc">$</span>Total_med_false_alarms <span class="sc">*</span> <span class="dv">10</span></span>
+<span id="cb120-6"><a href="#cb120-6" aria-hidden="true" tabindex="-1"></a>additional_costs_med_risk <span class="ot">&lt;-</span> cost_of_system_med_risk <span class="sc">-</span> old_costs</span>
+<span id="cb120-7"><a href="#cb120-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb120-8"><a href="#cb120-8" aria-hidden="true" tabindex="-1"></a><span class="co">#h High risk</span></span>
+<span id="cb120-9"><a href="#cb120-9" aria-hidden="true" tabindex="-1"></a>cost_of_system_high_risk <span class="ot">&lt;-</span> proportion_false_high_alarms<span class="sc">$</span>Total_high_false_alarms <span class="sc">*</span> <span class="dv">10</span></span>
+<span id="cb120-10"><a href="#cb120-10" aria-hidden="true" tabindex="-1"></a>additional_costs_high_risk <span class="ot">&lt;-</span> cost_of_system_high_risk <span class="sc">-</span> old_costs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="7" type="1">
+<li>Calculate profit increase as a % of the total profit (profit increase / (margin_per_item * number_of_transactions))</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a><span class="co">#current profit</span></span>
+<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a>old_profit <span class="ot">&lt;-</span> <span class="fl">1.7</span> <span class="sc">*</span> <span class="fu">nrow</span>(df)</span>
+<span id="cb121-3"><a href="#cb121-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb121-4"><a href="#cb121-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Medium risk</span></span>
+<span id="cb121-5"><a href="#cb121-5" aria-hidden="true" tabindex="-1"></a>additional_profit_med_risk <span class="ot">&lt;-</span> additional_revenues_med_risk <span class="sc">-</span> additional_costs_med_risk</span>
+<span id="cb121-6"><a href="#cb121-6" aria-hidden="true" tabindex="-1"></a>profit_increase_med_risk <span class="ot">&lt;-</span> additional_profit_med_risk<span class="sc">/</span> old_profit</span>
+<span id="cb121-7"><a href="#cb121-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb121-8"><a href="#cb121-8" aria-hidden="true" tabindex="-1"></a><span class="co"># High risk</span></span>
+<span id="cb121-9"><a href="#cb121-9" aria-hidden="true" tabindex="-1"></a>additional_profit_high_risk <span class="ot">&lt;-</span> additional_revenues_high_risk <span class="sc">-</span> additional_costs_high_risk</span>
+<span id="cb121-10"><a href="#cb121-10" aria-hidden="true" tabindex="-1"></a>profit_increase_high_risk <span class="ot">&lt;-</span> additional_profit_high_risk<span class="sc">/</span> old_profit</span>
+<span id="cb121-11"><a href="#cb121-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb121-12"><a href="#cb121-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cbind</span>(profit_increase_med_risk , profit_increase_high_risk )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     profit_increase_med_risk profit_increase_high_risk
+[1,]               0.02428239                0.02600039</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
